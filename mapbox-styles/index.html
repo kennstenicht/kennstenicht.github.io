@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>nighttime</title>
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.11.1/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.11.1/mapbox-gl.css' rel='stylesheet' />
+  <style type="text/css" media="screen">
+  .map {
+    width: 33%;
+    height: 50%;
+  }
+  #map1 {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+  }
+  #map2 {
+    position: fixed;
+    top: 0px;
+    left: 33%;
+  }
+  #map3 {
+    position: fixed;
+    top: 0px;
+    left: 66%;
+  }
+  #map4 {
+    position: fixed;
+    top: 50%;
+    left: 0px;
+  }
+  #map5 {
+    position: fixed;
+    top: 50%;
+    left: 33%;
+  }
+  #map6 {
+    position: fixed;
+    top: 50%;
+    left: 66%;
+  }
+  </style>
+</head>
+<body>
+  <a href="rp-daytime/index.html" id="map1" class="map"></a>
+  <a href="rp-colorful/index.html" id="map2" class="map"></a>
+  <a href="rp-blurred/index.html" id="map3" class="map"></a>
+  <a href="rp-nighttime/index.html" id="map4" class="map"></a>
+  <a href="rp-black/index.html" id="map5" class="map"></a>
+  <a href="rp-disturbed/index.html" id="map6" class="map"></a>
+  <script>
+  mapboxgl.accessToken = 'pk.eyJ1Ijoia2VubnN0ZW5pY2h0IiwiYSI6ImNpZXBvYXM2aDAwNmh0amtucDVnbXpqMzUifQ.i4Jhf7s4xL-2cHTu6tW4-Q';
+
+  // daytime
+  var map1 = new mapboxgl.Map({
+      container: 'map1',
+      style: 'mapbox://styles/kennstenicht/cifh5tmw500sqttkn0eebzp6y',
+      center: [13.373, 52.524],
+      zoom: 14
+  });
+
+  // colorful
+  var map2 = new mapboxgl.Map({
+      container: 'map2',
+      style: 'mapbox://styles/kennstenicht/cifs0g4f6000co6lzyh2qbi5w',
+      center: [13.373, 52.524],
+      zoom: 14
+  });
+
+  // blurred
+  var map3 = new mapboxgl.Map({
+      container: 'map3',
+      style: 'mapbox://styles/kennstenicht/cifrzqeab0009o6lz50tmv3kv',
+      center: [13.373, 52.524],
+      zoom: 14
+  });
+
+  // nighttime
+  var map4 = new mapboxgl.Map({
+      container: 'map4',
+      style: 'mapbox://styles/kennstenicht/cifs0jvaz000do6lzg60yez44',
+      center: [13.373, 52.524],
+      zoom: 14
+  });
+
+  // black
+  var map5 = new mapboxgl.Map({
+      container: 'map5',
+      style: 'mapbox://styles/kennstenicht/cifs1086s000go6lzhqo1dn8l',
+      center: [13.373, 52.524],
+      zoom: 14
+  });
+
+  // disrubed
+  var map6 = new mapboxgl.Map({
+      container: 'map6',
+      style: 'mapbox://styles/kennstenicht/cifs1bw9c000ho6lzbb9w0uv0',
+      center: [13.373, 52.524],
+      zoom: 14
+  });
+
+
+  </script>
+</body>
